@@ -1,0 +1,191 @@
+.service{
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+.service_con_one{
+  width: 65%;
+  background-color: var(--white);
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 0px 10px;
+}
+.ser_heading{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--white);
+  padding: 0px 10px;
+}
+.ser_heading h1{
+  font-size: 1.2rem;
+  color: var(--deep-black);
+  padding: 15px 0px;
+  font-family: var(--font-two);
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.ser_heading a{
+  font-size: 0.9rem;
+  color: var(--primary);
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-family: var(--font-one);
+  opacity: 0.9;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  position: relative;
+  cursor: pointer;
+  transition: height 0.2s ease-in-out, background-color 0.2s ease-in-out,
+}
+.ser_heading a::after{
+  position: absolute;
+  content: '';
+  height: 0.5px;
+  width: 95%;
+  background-color: var(--para-color);
+  bottom: -30%;
+  left: 0;
+  transition: height 0.2s ease-in-out, background-color 0.2s ease-in-out,
+}
+.ser_heading a:hover::after{
+  background-color: var(--primary);
+  height: 0.7px;
+  transition: height 0.2s ease-in-out, background-color 0.2s ease-in-out,
+}
+
+.service_con_two{
+  width: 30%;
+  padding: 15px 20px;
+  background-color: var(--white);
+  flex-grow: 1;
+  border-radius: 10px;
+}
+.serviceScrollingCon{
+  background-color: var(--dark-theme-white);
+  font-size: 15px;
+  padding-block: 15px;
+  overflow: hidden;
+  user-select: none;
+  --gap: 10px;
+  display: flex;
+  gap: var(--gap);
+  border-radius: 8px;
+  margin: 0px 0px 10px 0px;
+}
+.serviceScrollingCon ul{
+  list-style: none;
+  flex-shrink: 0;
+  min-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--gap);
+  animation: scroll 10s linear infinite;
+}
+@keyframes scroll {
+  from{
+    transform: translateX(50%);
+  }
+  to{
+    transform: translateX(-100%);
+  }
+}
+.serviceScrollingCon ul li{
+  font-size: 1rem;
+  font-family: var(--font-one);
+  text-transform: capitalize;
+  color: var(--light-black);
+  font-weight: 500;
+}
+.letsTalk{
+  font-size: 2.1rem;
+  color: var(--black);
+  font-family: var(--font-one);
+  margin: 0px 0px 10px 0px;
+  text-transform: capitalize;
+}
+.letsTalkLink{
+  font-size: 1rem;
+  font-family: var(--font-one);
+  color: var(--primary);
+  margin: 0px 0px 5px 0px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-transform: capitalize;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+@media (max-width: 1200px) {
+  .service {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .service_con_one,
+  .service_con_two {
+    width: 100%;
+  }
+
+  .ser_heading h1 {
+    font-size: 1.1rem;
+  }
+
+  .serviceScrollingCon ul li {
+    font-size: 0.9rem;
+  }
+
+  .letsTalk {
+    font-size: 1.8rem;
+  }
+
+  .letsTalkLink {
+    font-size: 0.9rem;
+  }
+}
+
+/* For screens smaller than 780px */
+@media (max-width: 780px) {
+  .service {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .service_con_one,
+  .service_con_two {
+    width: 100%;
+    padding: 10px 15px;
+  }
+
+  .ser_heading h1 {
+    font-size: 1rem;
+  }
+
+  .ser_heading a {
+    font-size: 0.8rem;
+  }
+
+  .serviceScrollingCon {
+    font-size: 14px;
+    padding-block: 10px;
+  }
+
+  .serviceScrollingCon ul li {
+    font-size: 0.8rem;
+  }
+
+  .letsTalk {
+    font-size: 1.5rem;
+  }
+
+  .letsTalkLink {
+    font-size: 0.8rem;
+  }
+}

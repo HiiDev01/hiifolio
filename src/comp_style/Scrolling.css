@@ -1,0 +1,43 @@
+.scrolling{
+  width: 100%;
+  padding: 12px;
+  font-size: 2rem;
+  background-color: var(--dark-theme-white);
+  overflow: hidden;
+  user-select: none;
+  --gap:  20px;
+  display: flex;
+  gap: var(--gap);
+  border-radius: 6px;
+}
+.scrolling ul{
+  list-style: none;
+  flex-shrink: 0;
+  min-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--gap);
+  animation: scroll 20s linear infinite;
+}
+.scrolling:hover ul{
+  animation-play-state: paused;
+}
+@keyframes scroll{
+  to{
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+.scrollText{
+  color: var(--light-black);
+  font-family: var(--font-one);
+  font-weight: 600;
+  font-size: 2.1rem;
+  text-transform: capitalize;
+}
+.scrollDot{
+  color: var(--light-black);
+  font-family: var(--font-one);
+  font-weight: 600;
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "year": "jul-2024",
+    "imgUrl": "src/assets/images/uptown.png",
+    "title": "uptownprohomes",
+    "description": "freelance project",
+    "type": "startUp Project",
+    "date": "2021-2022",
+    "link": "google.com"
+  },
+  {
+    "id": 2,
+    "year": "jul-2024",
+    "imgUrl": "src/assets/images/uptown.png",
+    "title": "uptownprohomes",
+    "description": "freelance project",
+    "type": "collaboration",
+    "date": "Jan-2024",
+    "link": "google.com"
+  },
+  {
+    "id": 3,
+    "year": "jul-2024",
+    "imgUrl": "src/assets/images/uptown.png",
+    "title": "uptownprohomes",
+    "description": "freelance project",
+    "type": "collaboration",
+    "date": "2021-2022",
+    "link": "google.com"
+  },
+  {
+    "id": 4,
+    "year": "jul-2024",
+    "imgUrl": "src/assets/images/uptown.png",
+    "title": "uptownprohomes",
+    "description": "freelance project",
+    "type": "collaboration",
+    "date": "Jun-2023",
+    "link": "google.com"
+  }
+]

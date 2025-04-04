@@ -1,0 +1,162 @@
+.project{
+  width: 100%;
+  background-color: var(--white);
+  border-radius: 10px;
+  padding: 0px 10px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  position: relative;
+}
+.p_header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--white);
+  padding: 0px 10px;
+}
+.p_header h1{
+  font-size: 1.1rem;
+  color: var(--deep-black);
+  padding: 15px 0px;
+  font-family: var(--font-two);
+  font-weight: 700;
+}
+.allProjectLnk{
+  font-size: 0.8rem;
+  color: var(--primary);
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-family: var(--font-one);
+  opacity: 0.9;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  position: relative;
+  cursor: pointer;
+  transition: height 0.2s ease-in-out, background-color 0.2s ease-in-out,
+}
+.allProjectLnk::after{
+  position: absolute;
+  content: '';
+  height: 0.5px;
+  width: 95%;
+  background-color: var(--para-color);
+  bottom: -30%;
+  left: 0;
+  transition: height 0.2s ease-in-out, background-color 0.2s ease-in-out,
+}
+.allProjectLnk:hover::after{
+  background-color: var(--primary);
+  height: 0.7px;
+  transition: height 0.2s ease-in-out, background-color 0.2s ease-in-out,
+}
+
+.projectListWrapper{
+  flex-grow: 1;
+  width: 100%;
+  min-height: max-content;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 10px 10px;
+}
+.projectItemCon{
+  width: 100%;
+  height: auto;
+  background-color: var(--dark-theme-white);
+  border-radius: 10px;
+  padding: 20px 20px 0px 20px;
+  cursor: pointer;
+  position: relative;
+  transition: visibility 0.1s ease;
+}
+.projectImg{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.projectImgZoom{
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color);
+  border-radius: 50%;
+  box-shadow: 0px 2px 5px var(--light-black);
+  visibility: hidden;
+  transition: visibility 0.1s ease;
+  border: none;
+}
+.projectItemCon:hover .projectImgZoom {
+  visibility: visible;
+  transition: visibility 0.1s ease;
+}
+.projectHeadingType{
+  position: absolute;
+  bottom: 10%;
+  left: 4%;
+  background-color: var(--color);
+  padding: 3px 12px;
+  font-family: var(--font-one);
+  font-size: 0.8rem;
+  border-radius: 5px;
+  text-transform: capitalize;
+  text-decoration: underline;
+  font-weight: 500;
+  color: var(--primary);
+  box-shadow: 0px 0px 0px var(--light-black);
+}
+.zoomicon{
+  font-size: 1rem;
+  font-weight: 900;
+  color: var(--primary);
+}
+.overlayCon{
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100vh;
+  padding: 1%;
+  background-color: var(--overlay);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 5% 0px 0px 0px;
+}
+.overlayWrap{
+  width: 60%;
+  height: 80vh;
+}
+.closeOverlaybtn{
+  display: block;
+  float: right;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #b2b2b2;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+.overlayImage{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (max-width: 1200px){
+  .overlayWrap{
+    width: 80%;
+    height: 80%;
+  }
+}

@@ -1,0 +1,182 @@
+.servicepage{
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+.servicepageSideCompoCon{
+  width: 32%;
+  background-color: var(--white);
+  padding: 20px;
+  border-radius: 12px;
+}
+.servicepageWrapCon{
+  width: 68%;
+  padding: 30px;
+  background-color: var(--white);
+  border-radius: 12px;
+}
+
+
+.ServicepageHeadCon{
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 10%;
+}
+.ServicePageHeadTextCon{
+  width: auto;
+  margin: 0px 0px 20px 0px;
+}
+.ServicePageHeadTextCon h1{
+  font-size: 2rem;
+  font-family: var(--font-one);
+  text-transform: capitalize;
+  font-weight: 600;
+  word-spacing: 1px;
+  color: var(--black);
+  margin: 0px 0px 10px 0px;
+}
+.ServicePageHeadTextCon h1 span{
+  color: var(--primary);
+}
+.ServicePageHeadTextCon p{
+  width: 90%;
+  font-size: 1.1rem;
+  font-family: var(--font-one);
+  color: var(--para-color);
+  font-family: 600;
+  word-spacing: 1.4px;
+  line-height: 1.6;
+  margin: 0px 0px 0px 0px;
+}
+.ServicePageHeadTextCon p span{
+  color: var(--black);
+}
+
+.SericePageNotify{
+  flex-shrink: 0;
+  font-size: 0.8rem;
+  background-color: var(--dark-theme-white);
+  padding: 10px 15px;
+  display: flex;
+  align-items:  center;
+  gap: 10px;
+  font-family: var(--font-one);
+  font-weight: 500;
+  color: var(--primary);
+  word-spacing: 1px;
+  text-transform: capitalize;
+  border-radius: 5px;
+}
+.pluse{ 
+  width: 7px;
+  height: 7px;
+  position: relative;
+  border-radius: 50%;
+  background-color: var(--primary);
+}
+.pluse span{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  animation:  bubble 2s ease-out infinite;
+  background-color: inherit;
+  border-radius: inherit;
+  opacity: 0.8;
+  transition: transform 10s ease-in-out;
+}
+@keyframes bubble{
+  100%{
+    opacity: 0;
+    transform: scale(2);
+    transition: transform 10s ease-in-out;
+  }
+}
+.servicePageItemCon{
+  margin: 0px 0px 20px 0px;
+}
+
+.servicePageImgCon{
+  width: 100%;
+  height: 60vh;
+  padding: 0px 10px;
+  margin: 0px 0px 10px 0px;
+}
+.servicePageImgWrap{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.servicePageImgWrap img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.servicePageSkillsCon{
+  margin: 0px 0px 0px 0px;
+}
+.servicePageTestifyCon{
+  margin: 0px 0px 20px 0px;
+}
+.servicePageStartupCon{
+  margin: 0px 0px 40px 0px;
+}
+
+@media (max-width: 1200px) {
+  .servicepage {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .servicepageSideCompoCon,
+  .servicepageWrapCon {
+    width: 100%;
+  }
+  .servicepageWrapCon {
+    padding: 20px;
+  }
+  .ServicepageHeadCon{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 10%;
+    margin: 0px 0px 10px 0px;
+  }
+  .ServicePageHeadTextCon h1 {
+    font-size: 1.8rem;
+  }
+  .ServicePageHeadTextCon p {
+    font-size: 1rem;
+  }
+}
+
+/* Media Query for 780px */
+@media (max-width: 780px) {
+  .servicepage {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .servicepageSideCompoCon,
+  .servicepageWrapCon {
+    width: 100%;
+    padding: 15px;
+  }
+  .servicePageImgCon {
+    height: 40vh; /* Adjust image height */
+  }
+  .ServicePageHeadTextCon h1 {
+    font-size: 1.5rem;
+  }
+  .ServicePageHeadTextCon p {
+    font-size: 0.9rem;
+  }
+  .SericePageNotify {
+    font-size: 0.7rem;
+    padding: 8px 12px;
+  }
+}

@@ -1,0 +1,95 @@
+.testimonial{
+  width: 100%;
+  height: auto;
+}
+.testimonial h1{
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  color: var(--deep-black);
+  font-family: var(--font-one);
+  padding: 15px 0px;
+  background-color: var(--white);
+  font-weight: 700;
+  word-spacing: 2px;
+  margin: 0px 0px 5px 0px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.testimonialSliderCon{
+  width: 100%;
+  height: auto;
+}
+
+.testify_item{
+  background-color: var(--dark-theme-white);
+  padding: 20px;
+  border-radius: 5px;
+  flex-grow: 1;
+}
+.TestifyHead{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 0px 0px 15px 0px;
+}
+.TestifyHead .rating{
+  font-size: 1rem;
+  color: orange;
+  display: flex;
+  align-items: baseline;
+  gap: 2px;
+}
+.TestifyHead a{
+  font-size: 0.7rem;
+  color: var(--primary);
+  background-color: var(--color);
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--font-one);
+  font-weight: 500;
+}
+.testifyContent{
+  font-family: var(--font-one);
+  font-family: 400;
+  color: var(--link-color);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 0px 0px 10px 0px;
+}
+
+
+.Testifier{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+}
+.TestifierName{
+  color: var(--black);
+  font-family: var(--font-one);
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.TestifierRole{
+  color: var(--link-color);
+  font-family: var(--font-one);
+  font-size: 0.9rem;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+@media (max-width: 1200px) {
+  
+}
+@media (max-width: 780px) {
+  .testimonial h1{
+    font-size: 1.4rem;
+    margin: 0px 0px 12% 0px;
+  }
+}

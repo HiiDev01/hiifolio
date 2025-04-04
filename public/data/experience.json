@@ -1,0 +1,43 @@
+[
+  {
+    "id": 1,
+    "year": "jan-2024",
+    "imgUrl": "src/assets/images/hng.png",
+    "title": "Hng Intership",
+    "description": "front-end dev"
+  },
+  {
+    "id": 2,
+    "year": "sep-2024",
+    "imgUrl": "src/assets/images/visily.png",
+    "title": "Visily",
+    "description": "self-side projects"
+  },
+  {
+    "id": 3,
+    "year": "jul-2024",
+    "imgUrl": "src/assets/images/uptown.png",
+    "title": "uptownprohomes",
+    "description": "freelance project"
+  },
+  {
+    "id": 4,
+    "year": "dec-2024",
+    "imgUrl": "src/assets/images/hrm.png",
+    "title": "HRM webapp",
+    "description": "side project"
+  },
+  {
+    "id": 5,
+    "year": "dec-2024",
+    "imgUrl": "src/assets/images/hrm.png",
+    "title": "HRM webapp",
+    "description": "side project"
+  },  {
+    "id": 6,
+    "year": "dec-2024",
+    "imgUrl": "src/assets/images/hrm.png",
+    "title": "HRM webapp",
+    "description": "side project"
+  }
+]

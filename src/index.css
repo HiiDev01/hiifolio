@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+:root{
+  --primary: #0066ff;
+  --background: #F0F2F5;
+  --black: #1A1F2C;
+  --plain-black: #1A1F2C;
+  --deep-black: #212529;
+  --light-black: #576076;
+  --darker-black: #000000;
+  --color: #ffffff;
+  --hamburger-color: #1A1F2C;
+  --change-appr: #f0f2f5;
+  --para-color: #576076;
+  --link-color:  #1A1F2C;
+  --link-bg: #ffffff;
+  --inner-scroll: #DBDFE5;
+  --font-one: "Roboto", sans-serif;
+  --font-two:  "Playfair Display", serif;
+  --font-three:  "Lato", serif;
+  --dark-theme-black: #0E1018;
+  --dark-theme-white: #f0f2f5;
+  --dark-theme-bg: #000;
+  --white: #ffffff;
+  --dark-theme-light-white: rgba(240, 242, 245, 0.7);
+  --border: #DBDFE5;
+  --transision: all 0.1s ease-out 0s;
+  --overlay: #ffffff15;
+  --pure-black:  #1A1F2C;
+  --accordionbg-color: #ffffff;
+  --skeleton: #e0e0e0;
+}
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100dvh;
+  background-color: var(--background);
+  transition: background-color 0.3s, color 0.3s, all 0.3s ease-in-out;
+  scroll-behavior: smooth;
+
+}
+.light {
+  --background: #F0F2F5;
+  --light-black: #576076;
+  --primary: #0066ff;
+  --white: #ffffff;
+  --black: #1A1F2C;
+  --deep-black: #212529;
+  --plain-black: #1A1F2C;
+  --color: #ffffff;
+  --dark-theme-black: #0E1018;
+  --dark-theme-white: #f0f2f5;
+  --hamburger-color: #0066ff;
+  --change-appr: #f0f2f5;
+  --para-color: #576076;
+  --border: #DBDFE5;
+  --link-color:  #1A1F2C;
+  --link-bg: #ffffff;
+  --inner-scroll: #DBDFE5;
+  --overlay: #000000ac;
+  --fair-color:  #2d2d2e5b;
+  --accordionbg-color: #ffffff;
+  --skeleton: #e0e0e0;
+}
+
+.dark {
+  --background:#1A1F2C;
+  --light-black: #576076;
+  --primary: #0066ff;
+  --white: #000;
+  --black: #ffffff;
+  --plain-black: #1A1F2C;
+  --deep-black: #f5f5f5;
+  --color: #ffffff;
+  --dark-theme-white: #0E1018;
+  --hamburger-color: #576076;
+  --change-appr: #1A1F2C;
+  --para-color: #f0f2f5b3;
+  --link-color:  #f0f2f5b3;
+  --border: #dbdfe522;
+  --link-bg: #0E1018;  
+  --inner-scroll: #576076;
+  --overlay: #000000ac;
+  --fair-color:   #0066ff;
+  --accordionbg-color: #000;
+  --skeleton: #3a3f53;
+}
+
+
+.slick-list {margin: 5px -5px;}
+.slick-slide>div {padding: 0px 5px;}
+.slick-prev{
+  border-radius: none !important;
+}
+.slick-prev:before, .slick-next:before{
+  font-size: 30px !important;
+  color: var(--primary) !important;
+  border-radius: 0px !important;
+}
+.slick-prev{
+  top: -14% !important;
+  left: 88% !important;
+}
+.slick-next{
+  top: -14% !important;
+  right: 1% !important;
+}
+
+@media (max-width: 780px) {
+  .slick-prev{
+    top: -10% !important;
+    left: 0% !important;
+  }
+  .slick-next{
+    top: -10% !important;
+    right: 80% !important;
+  }
+}

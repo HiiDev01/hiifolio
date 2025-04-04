@@ -1,0 +1,116 @@
+.articleSlideCon{
+  width: 100%;
+}
+.articleSlideCon h1{
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  color: var(--deep-black);
+  font-family: var(--font-one);
+  padding: 15px 0px;
+  background-color: var(--white);
+  font-weight: 700;
+  word-spacing: 2px;
+  margin: 0px 0px 5px 0px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.articleSliderCon{
+  width: 100%;
+}
+.blogItem{
+  width: 100%;
+  padding: 10px;
+  background-color: var(--dark-theme-white);
+}
+.blogLink{
+  text-decoration: none;
+}
+.blogImageCon{
+  width: 100%;
+  height: 200px;
+  position: relative;
+  margin: 0px 0px 10px 0px;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.4s ease-in-out;
+}
+.blogImageCon p{
+  position: absolute;
+  left: 5%;
+  bottom: 10%;
+  background-color: var(--color);
+  font-family: var(--font-one);
+  font-weight: 500;
+  color: var(--primary);
+  font-size: 0.7rem;
+  text-transform: capitalize;
+  padding: 2px 10px;
+  border-radius: 3px;
+}
+.blogImageCon img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease-in-out;
+}
+.blogImageCon:hover.blogImageCon img{
+  transform: scale(1.2);
+  transition: transform 0.4s ease-in-out;
+}
+.blogTitle{
+  font-size: 1.1rem;
+  color: var(--para-color);
+  font-family: var(--font-one);
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 1.5;
+  word-spacing: 1px;
+  margin: 0px 0px 10px 0px;
+  transition: color 0.1s ease;
+}
+.blogTitle:hover{
+  color: var(--primary);
+  transition: color 0.1s ease;
+}
+.blogUl{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+  padding: 0px 10px;
+}
+.blogUl li{
+  font-family: var(--font-one);
+  color: var(--light-black);
+  font-size: 0.8rem;
+  font-weight: 500;
+  position: relative;
+}
+.blogUl li::before{
+  position: absolute;
+  content: '';
+  top: 45%;
+  left: -15%;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: var(--light-black);
+}
+
+@media (max-width: 1200px) {
+  .articleSlideCon h1{
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    color: var(--deep-black);
+    font-family: var(--font-one);
+    padding: 15px 0px;
+    background-color: var(--white);
+    font-weight: 700;
+    word-spacing: 2px;
+    margin: 0px 0px 12% 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+}
+

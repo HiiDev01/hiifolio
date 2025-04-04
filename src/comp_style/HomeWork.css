@@ -1,0 +1,121 @@
+.homework{
+  overflow: hidden;
+  border-radius: 10px;
+  width: 100%;
+  background-color: var(--white);
+}
+.homework h1{
+  font-size: 1.1rem;
+  color: var(--deep-black);
+  padding: 15px 20px;
+  background-color: var(--white);
+  font-family: var(--font-two);
+  font-weight: 700;
+  box-shadow: 0px 2px 2px var(--border);
+}
+.ExpScrollCon{
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  padding: 5px 5px 10px 5px;
+  max-height: 180px;
+}
+.ExpScrollWrap{
+  display: flex;
+  width: 100%;
+
+}
+.ExpScrollWrap::-webkit-scrollbar{
+  width: none;
+}
+
+
+.exp_con{
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 5px 15px;
+  margin: 0px 0px 5px 0px;
+}
+.exp_h3{
+  font-size: 1rem;
+  color: var(--para-color);
+  font-family: var(--font-one);
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.exp_itemCon{
+  width: 60%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.expImgcon{
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  border-radius: 8px;
+  background-color: var(--dark-theme-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.expImgcon img{
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+.exp_itemtitlecon{
+  border: none;
+}
+.exp_itemtitlecon h4{
+  font-size: 1rem;
+  font-family: var(--font-one);
+  font-weight: 600;
+  margin: 0px 0px 5px 0px;
+  color: var(--link-color);
+  text-transform: capitalize;
+  letter-spacing: 0.1px;
+}
+.exp_itemtitlecon p{
+  font-family: var(--font-one);
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--light-black);
+  text-transform: capitalize;
+}
+
+
+.scroll{
+  width: 100%;
+  height: 100%;
+  padding: 0px 10px;
+  font-size: 2rem;
+  background-color: var(--dark-theme-white);
+  overflow: hidden;
+  user-select: none;
+  --gap:  20px;
+  display: block;
+  gap: var(--gap);
+  border-radius: 6px;
+}
+.scroll ul{
+  list-style: none;
+  flex-shrink: 0;
+  min-width: 100%;
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--gap);
+  animation: scrol 5s linear infinite;
+  transition: animation 0.2s ease-in-out;
+}
+.scroll:hover ul{
+  animation-play-state: paused;
+}
+@keyframes scrol{
+  to{
+    transform: translateY(calc(-100% - var(--gap)));
+  }
+}

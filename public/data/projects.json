@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "heading": "web app | development",
+    "miniHeading": "",
+    "name": "visily - Saas Web App Tools",
+    "clintName": "",
+    "websiteLink": "",
+    "serviceType": "",
+    "overviewParagraph": "",
+    "researchParagraph": "",
+    "Information Architecture": "",
+    "screenBlueprint": "",
+    "screenBlueprintLink": "",
+    "images": [
+      "src/assets/images/visily.png",
+      "src/assets/images/visily.png",
+      "src/assets/images/visily.png"
+    ],
+    "linkToZoom": "src/assets/images/visily.png",
+    "Rchallenge": "",
+    "Rsolution": "",
+    "Bchallenge": "",
+    "Bsolution": "",
+    "Uchallenge": "",
+    "Usolution": "",
+    "Conclusion": ""
+  },
+  {
+    "id": 2,
+    "heading": "website",
+    "miniHeading": "",
+    "name": "visily - Saas Web App Tools",
+    "clintName": "",
+    "websiteLink": "",
+    "serviceType": "",
+    "overviewParagraph": "",
+    "researchParagraph": "",
+    "Information Architecture": "",
+    "screenBlueprint": "",
+    "screenBlueprintLink": "",
+    "images": [
+      "src/assets/images/hrm.png",
+      "src/assets/images/visily.png",
+      "src/assets/images/visily.png"
+    ],
+    "linkToZoom": "src/assets/images/hrm.png",
+    "Rchallenge": "",
+    "Rsolution": "",
+    "Bchallenge": "",
+    "Bsolution": "",
+    "Uchallenge": "",
+    "Usolution": "",
+    "Conclusion": ""
+  }
+]
