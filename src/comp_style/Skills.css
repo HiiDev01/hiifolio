@@ -17,6 +17,39 @@
   border-top-left-radius: 10px;
   border-top-right-radius: 10px
 }
+.skills h1 span{
+  float: right;
+}
+.skills h1 span a{
+  font-size: 0.9rem;
+    color: var(--primary);
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-family: var(--font-one);
+    opacity: 0.9;
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 5px;
+    cursor: pointer;
+    transition: height 0.2s ease-in-out, background-color 0.2s ease-in-out,
+}
+.skills h1 span  a::after{
+  position: absolute;
+  content: '';
+  height: 0.5px;
+  width: 95%;
+  background-color: var(--para-color);
+  bottom: -30%;
+  left: 0;
+  transition: height 0.2s ease-in-out, background-color 0.2s ease-in-out,
+}
+.skills h1 span a:hover::after{
+  background-color: var(--primary);
+  height: 0.7px;
+  transition: height 0.2s ease-in-out, background-color 0.2s ease-in-out,
+}
 .skillsCon{
   display: grid;
   place-items: center;

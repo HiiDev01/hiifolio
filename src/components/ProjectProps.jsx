@@ -3,11 +3,12 @@ import '../comp_style/HomeProject.css';
 import { FaArrowRight } from "react-icons/fa";
 import { FiPlus } from "react-icons/fi";
 import { IoClose } from "react-icons/io5";
+import { Link } from 'react-router-dom';
 
 const Project = ({ projects, limit = null, showHeader = true }) => {
   const [overlayImage, setOverlayImage] = useState(null);
 
-  // Determine whether to slice the projects
+
   const displayedProjects = limit ? projects.slice(0, limit) : projects;
 
   const openOverlay = (image) => {
@@ -22,10 +23,10 @@ const Project = ({ projects, limit = null, showHeader = true }) => {
       {showHeader && (
         <div className="p_header">
           <h1>Recent Projects</h1>
-          <a href="#" className='allProjectLnk'>
+          <Link to="/Portfolio" className='allProjectLnk'>
             All Projects
             <FaArrowRight />
-          </a>
+          </Link>
         </div>
       )}
       <div className="projectListWrapper">
@@ -42,12 +43,12 @@ const Project = ({ projects, limit = null, showHeader = true }) => {
             >
               <FiPlus className='zoomicon' />
             </button>
-            <a 
-              href={projectItem.websiteLink} 
+            <Link 
+              to={projectItem.websiteLink} 
               className='projectHeadingType'
             >
               {projectItem.heading}
-            </a>
+            </Link>
           </div>
         ))}
       </div>

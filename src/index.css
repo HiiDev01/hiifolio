@@ -5,7 +5,8 @@
   box-sizing: border-box;
 }
 :root{
-  --primary: #0066ff;
+  --primary: #e21b5a;
+  /*--primary: #0066ff;*/
   --background: #F0F2F5;
   --black: #1A1F2C;
   --plain-black: #1A1F2C;
@@ -45,12 +46,13 @@ body {
   background-color: var(--background);
   transition: background-color 0.3s, color 0.3s, all 0.3s ease-in-out;
   scroll-behavior: smooth;
-
+  overflow-x: hidden;
 }
 .light {
   --background: #F0F2F5;
   --light-black: #576076;
-  --primary: #0066ff;
+  /*--primary: #0066ff;*/
+  --primary: #e21b5a;
   --white: #ffffff;
   --black: #1A1F2C;
   --deep-black: #212529;
@@ -74,7 +76,8 @@ body {
 .dark {
   --background:#1A1F2C;
   --light-black: #576076;
-  --primary: #0066ff;
+  /*--primary: #0066ff;*/
+  --primary: #e21b5a;
   --white: #000;
   --black: #ffffff;
   --plain-black: #1A1F2C;

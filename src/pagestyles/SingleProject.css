@@ -1,23 +1,19 @@
 
 .singleWrapper{
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 20px;
   margin: 0px 0px 20px 0px;
 }
-.singleAside{
-  width: 32%;
-  padding: 15px 15px 1% 15px;
-  background-color: var(--white);
-  border-radius: 12px;
-}
 .singleMain{
-  width: 68%;
+  width: 80%;
+  height: 100%;
   background-color: var(--white);
   border-radius: 12px;
   padding: 30px;
-  overflow-y: auto;
 }
 
 .title{
@@ -171,5 +167,79 @@
   width: 100%;
   height: 30vh;
   background-color: var(--skeleton);
+}
+@media (max-width: 1200px) {
+  .singleAside {
+    width: 40%;
+  }
+  .singleMain {
+    width: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  .singleWrapper {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .singleAside {
+    width: 100%;
+  }
+
+  .singleMain {
+    width: 100%;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .para {
+    font-size: 0.9rem;
+  }
+
+  .imgCon {
+    height: 250px;
+  }
+
+  .abt-title, .abt-subtitle, .res {
+    font-size: 1.3rem;
+  }
+
+  .abt-para, .abt-subpara, .res-para {
+    width: auto;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .singleWrapper {
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 1.6rem;
+  }
+
+  .para {
+    font-size: 0.85rem;
+  }
+
+  .imgCon {
+    height: 200px;
+  }
+
+  .abt-title, .abt-subtitle, .res {
+    font-size: 1.2rem;
+  }
+
+  .abt-para, .abt-subpara, .res-para {
+    font-size: 0.85rem;
+  }
+
+  .tech-ul li {
+    font-size: 1rem;
+  }
 }
 

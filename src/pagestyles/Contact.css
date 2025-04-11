@@ -59,15 +59,15 @@
   display: block;
   font-family: var(--font-one);
   font-weight: 500;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   text-transform: capitalize;
   color: var(--deep-black);
-  margin: 0px 0px 8px 0px;
+  margin: 0px 0px 10px 0px;
 }
 .formName input, .formSubItem input{
   width: 100%;
   padding: 15px;
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-family: var(--font-one);
   font-weight: 500;
   color: var(--para-color);
@@ -108,7 +108,7 @@
 .formSubmit button{
   width: 100%;
   padding: 15px;
-  font-size: 0.8rem;
+  font-size: 1rem;
   gap: 5px;
   display: flex;
   align-items: center;
@@ -152,7 +152,7 @@
   }
   .contact_main{
     width: 100%;
-    padding: 30px;
+    padding: 20px;
     background-color: var(--white);
     border-radius: 12px;
     border: 1px solid black;
@@ -164,7 +164,7 @@
   }
 
   .formCon {
-    padding: 20px;
+    padding: 10px;
   }
 
   .formNameCon,
@@ -204,19 +204,19 @@
   }
 
   .contact_heading p {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   .formName input,
   .formSubItem input,
   .formMessageCon textarea {
-    padding: 10px;
-    font-size: 0.7rem;
+    padding: 20px;
+    font-size: 1rem;
   }
 
   .formSubmit button {
-    padding: 10px;
-    font-size: 0.7rem;
+    padding: 20px;
+    font-size: 1rem;
   }
 
   .mapCon {

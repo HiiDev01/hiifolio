@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../comp_style/Navbar.css';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { TbCards } from "react-icons/tb";
 import { BsFilePerson } from "react-icons/bs";
 import { BiLayer } from "react-icons/bi";
@@ -22,6 +22,14 @@ const items = [
 
 const Navbar = () => {
   const [hamburgerClick, setHamburgerClick] = useState('false');
+
+  useEffect(()=>{
+    if(!hamburgerClick){
+      document.body.classList.add('no-scroll');
+    }else{
+      document.body.classList.remove('no-scroll');
+    }
+  }, [hamburgerClick])
 
   const hamburgerToggle = ()=>{
     setHamburgerClick(!hamburgerClick);
@@ -59,6 +67,7 @@ const Navbar = () => {
                 className={({isActive})=>
                 isActive ? 'nav_link active' : 'nav_link'
                 }
+               onClick={()=> setHamburgerClick(true)}
               >
                 <span className='nav_icon'>{list.icon}</span>
                 {list.text}
@@ -70,12 +79,16 @@ const Navbar = () => {
           <div className="toggle_component">
             <ThemeToggle/>
           </div>
-          <a href="#" className='nav_contact_link'>
+          <Link 
+             to="/CONTACT" 
+             className='nav_contact_link'
+             onClick={()=> setHamburgerClick(true)}
+          >
             let's talk 
             <span>
               <TbArrowElbowRight className='talk_icon' />
             </span>
-            </a>
+            </Link>
         </div>
       </div>
       <div 

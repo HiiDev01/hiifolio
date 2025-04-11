@@ -4,12 +4,28 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import '../comp_style/ArticleSlider.css';
 import { Link } from 'react-router-dom';
+import supabase from '../config/SupabaseClient';
 
 const ArticleSlider = () => {
   const [blogs, setBlogs] = useState([]);
- 
 
   useEffect(()=>{
+    const fetchSlider = async ()=>{
+      const {data, error} = await supabase
+      .from('articles')
+      .select('*')
+
+      if(error){
+        console.log('error fetching slider blog', error)
+      }
+      if(data){
+        console.log(data)
+        setBlogs(data)
+      }
+    }
+    fetchSlider()
+  },[])
+  /*useEffect(()=>{
     fetch('/data/blog.json')
     .then((res)=>{
       if(!res.ok){
@@ -26,7 +42,7 @@ const ArticleSlider = () => {
       setBlogs(dataFormated)
     })
     .catch((err)=> console.log("Error", err.message))
-  }, []);
+  }, []);*/
 
   var settings = {
     dots: false,
@@ -70,11 +86,11 @@ const ArticleSlider = () => {
       <div className="articleSliderCon">
         <Slider {...settings}>
           {blogs.map((blog)=>(
-            <Link to="" key={blog.id} className='blogLink'>
+            <Link to={`/blog/${blog.id}`} key={blog.id} className='blogLink'>
               <div className="blogItem">
                 <div className="blogImageCon">
                   <img src={blog.image} alt={blog.title} />
-                  <p>{blog.feild}</p>
+                  <p>{blog.created_at}</p>
                 </div>
                 <h2 className='blogTitle'>{blog.title}</h2>
                 <ul className='blogUl'>

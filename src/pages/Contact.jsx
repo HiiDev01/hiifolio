@@ -1,11 +1,38 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import { useRef } from 'react';
 import SideHome from '../components/SideHome';
 import '../pagestyles/Contact.css';
 import { TbArrowElbowRight } from "react-icons/tb";
 import Faq from '../components/Faq';
 import Scrolling from '../components/Scrolling';
+import emailjs from '@emailjs/browser';
+
 
 const Contact = () => {
+  const navigate = useNavigate()
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_7e7zpgn', 'template_9vanqbo', form.current, {
+        publicKey: 'BRzxAM97lBtTFdWtc',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+          alert('your message have been sent')
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+      navigate('/')
+    }
+
+
   return (
     <div className='contact'>
       <div className="contactSideCon">
@@ -21,15 +48,15 @@ const Contact = () => {
           </p>
         </div>
         <div className="formCon">
-          <form action="">
+          <form ref={form} onSubmit={sendEmail}>
 
             <div className="formNameCon">
               <div className="formName firstName">
-                <label htmlFor="formName">name</label>
+                <label htmlFor="username">name</label>
                 <input 
                   type="text" 
-                  name="formName" 
-                  id="formName"
+                  name="user_name" 
+                  id="username"
                   placeholder='Enter your name'
                   required
                 />
@@ -38,7 +65,7 @@ const Contact = () => {
                 <label htmlFor="formEmail">email</label>
                 <input 
                   type="email" 
-                  name="formEmail" 
+                  name="user_email" 
                   id="formEmail" 
                   placeholder='Enter your email'
                   required
@@ -51,7 +78,7 @@ const Contact = () => {
                 <label htmlFor="formSubject">subject</label>
                 <input 
                   type="text" 
-                  name="formSubject" 
+                  name="subject" 
                   id="formSubject" 
                   placeholder='Subject'
                 />
@@ -61,7 +88,7 @@ const Contact = () => {
                 <label htmlFor="formPhone">phone</label>
                 <input 
                   type="tel" 
-                  name="formPhone" 
+                  name="phone" 
                   id="formPhone" 
                   placeholder='Enter phone (optional)'
                 />
@@ -70,7 +97,7 @@ const Contact = () => {
             <div className="formMessageCon">
               <label htmlFor="formMessage">Message</label>
               <textarea 
-                name="formMessage" 
+                name="message" 
                 id="formMessage"
                 rows={5}
                 placeholder='Feel free to leave me a detailed message.'
@@ -92,9 +119,10 @@ const Contact = () => {
             width="100%" 
             height="100%" 
             style={{border: '0px'}} 
-            allowfullscreen="" 
+            allowFullScreen
             loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+            referrerPolicy="no-referrer-when-downgrade">
+          </iframe>
         </div>
 
         <Faq/>

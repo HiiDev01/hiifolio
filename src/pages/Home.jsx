@@ -15,7 +15,7 @@ const Home = () => {
         </div>
         <div className="home2">
           <div className="home2Container">
-  
+
             <div className="homeWrap hm_item">
              <HomeWork/>  
             </div>

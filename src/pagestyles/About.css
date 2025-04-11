@@ -7,13 +7,15 @@
 }
 .AboutSideComponentCon{
   width: 32%;
-  position: sticky;
+  height: auto;
+  position: static;
   background-color: var(--white);
   padding: 20px;
   border-radius: 12px;
 }
 .AboutWrapperCon{
   width: 68%;
+  height: auto;
   padding: 30px;
   background-color: var(--white);
   border-radius: 12px;

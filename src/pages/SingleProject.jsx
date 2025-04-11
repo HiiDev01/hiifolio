@@ -39,7 +39,7 @@ const SingleProject = () => {
         setFetchError(null)
         setIsLoading(false)
       }
-     }, 3000)
+     }, 1000)
     }
 
     fetchSingle()
@@ -50,9 +50,7 @@ const SingleProject = () => {
   return (
     <div>
       <div className="singleWrapper">
-        <div className="singleAside">
-          <SideHome/>
-        </div>
+
         <div className="singleMain">
           {setFetchError && <p>{fetchError}</p>}
           {isLoading ? (

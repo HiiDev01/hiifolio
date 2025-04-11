@@ -6,6 +6,8 @@ import t3 from '../assets/images/t3.png'
 import t4 from '../assets/images/t4.png'
 import t5 from '../assets/images/t5.png'
 import t6 from '../assets/images/t6.png'
+import { FaArrowRight} from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 
 const Skills = () => {
@@ -21,7 +23,7 @@ const Skills = () => {
 
   return (
     <div className='skills'>
-      <h1>My Tech Stack</h1>
+      <h1>My Tech Stack <span><Link to="/ABOUT">all skills <FaArrowRight /></Link></span></h1>
       <div className="skillsCon">
         {techSkills.slice(0, 6).map((tech)=>(
           <div key={tech.id} className='skills_item'>

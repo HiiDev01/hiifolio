@@ -10,6 +10,7 @@ import { FaArrowRight} from "react-icons/fa";
 import { TbArrowElbowRight } from "react-icons/tb";
 import ServiceProp from './ServiceProp';
 import '../comp_style/Service.css'
+import { Link } from 'react-router-dom';
 
 
 const Service = () => {
@@ -28,7 +29,7 @@ const Service = () => {
       <div className="service_con_one">
         <div className="ser_heading">
           <h1>service i Offered</h1>
-          <a href="#">see all service <FaArrowRight /></a>
+          <Link to="/SERVICES">see all service <FaArrowRight /></Link>
         </div>
         <ServiceProp serviceList={serviceList} showAll={false}/>
       </div>
@@ -53,7 +54,7 @@ const Service = () => {
           </ul>
         </div>
         <h2 className='letsTalk'>Let's👋 <br /> work together</h2>
-        <a href="#"  className='letsTalkLink'>let's talk <TbArrowElbowRight /></a>
+        <Link to="/CONTACT"  className='letsTalkLink'>let's talk <TbArrowElbowRight /></Link>
       </div>
     </div>
   )

@@ -8,6 +8,8 @@ import ServicePage from './pages/ServicePage';
 import Contact from './pages/Contact';
 import Blog from './pages/Blog';
 import SingleProject from './pages/SingleProject';
+import SingleBlog from './pages/SingleBlog'
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 function App() {
 
@@ -26,6 +28,7 @@ function App() {
           <Route path='/Portfolio' element={<Projects/>}/>
           <Route path='/Portfolio/:id' element={<SingleProject/>}/>
           <Route path='/BLOG' element={<Blog/>}/>
+          <Route path='/BLOG/:id' element={<SingleBlog/>}/>
           <Route path='/CONTACT' element={<Contact/>}/>
         </Routes>
        </main>
