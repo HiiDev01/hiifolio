@@ -166,7 +166,7 @@
     border-radius: 50%;
     display: block;
     position: absolute;
-    bottom: 5%;
+    bottom: 10%;
     left: 50%;
     transform: translateX(-50%);
     background-color: var( --color);
