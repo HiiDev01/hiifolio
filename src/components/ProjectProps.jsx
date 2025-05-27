@@ -46,6 +46,8 @@ const Project = ({ projects, limit = null, showHeader = true }) => {
             <Link 
               to={projectItem.websiteLink} 
               className='projectHeadingType'
+              target="_blank"
+              rel="noopener noreferrer"
             >
               {projectItem.heading}
             </Link>

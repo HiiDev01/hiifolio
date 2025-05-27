@@ -16,14 +16,14 @@
   padding: 0px 10px;
 }
 .p_header h1{
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   color: var(--deep-black);
   padding: 15px 0px;
   font-family: var(--font-two);
   font-weight: 700;
 }
 .allProjectLnk{
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: var(--primary);
   text-decoration: none;
   text-transform: capitalize;
@@ -56,17 +56,17 @@
 .projectListWrapper{
   flex-grow: 1;
   width: 100%;
-  min-height: max-content;
+  height: max-content;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
   gap: 20px;
   padding: 10px 10px;
 }
 .projectItemCon{
   width: 100%;
-  height: auto;
   background-color: var(--dark-theme-white);
   border-radius: 10px;
+  max-height: 220px;
   padding: 20px 20px 0px 20px;
   cursor: pointer;
   position: relative;

@@ -5,14 +5,14 @@
   background-color: var(--white);
 }
 .skills h1{
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   color: var(--deep-black);
   padding: 15px 20px;
   background-color: var(--white);
   font-family: var(--font-two);
   font-weight: 700;
   word-spacing: 2px;
-  margin: 0px 0px 10px 0px;
+  margin: 0px 0px 20px 0px;
   box-shadow: 0px 2px 2px var(--border);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px
@@ -21,7 +21,7 @@
   float: right;
 }
 .skills h1 span a{
-  font-size: 0.9rem;
+  font-size: 1rem;
     color: var(--primary);
     text-decoration: none;
     text-transform: capitalize;

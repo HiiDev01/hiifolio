@@ -8,13 +8,22 @@
   min-height: 200px;
   margin: 0px 0px 15px 0px;
   border-radius: 10px;
+  /*background-image: url('/myport.png');
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;*/
 }
 .sideHomeTextContainer{
   margin: 0px 0px 20px 0px;
 }
+.sideImageContainer img{
+  width: 100%;
+  max-height: 300px;
+  object-fit: contain;
+}
 .name{
   width: max-content;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-family: var(--font-one);
   font-weight: 500;
   color: var(--deep-black);
@@ -91,7 +100,7 @@
 .sideHomeLinks:nth-child(1){
   background-color: var(--primary);
   color: var(--color);
-  opacity: 0.8;
+  opacity: 1;
   transition: opacity 0.2s ease-in-out;
 }
 .sideHomeLinks:nth-child(1):hover{

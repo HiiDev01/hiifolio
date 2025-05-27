@@ -4,53 +4,21 @@
     "heading": "web app | development",
     "miniHeading": "",
     "name": "visily - Saas Web App Tools",
-    "clintName": "",
-    "websiteLink": "",
-    "serviceType": "",
-    "overviewParagraph": "",
-    "researchParagraph": "",
-    "Information Architecture": "",
-    "screenBlueprint": "",
-    "screenBlueprintLink": "",
     "images": [
-      "project5.png",
-      "project5.png",
       "project5.png"
     ],
     "linkToZoom": "project5.png",
-    "Rchallenge": "",
-    "Rsolution": "",
-    "Bchallenge": "",
-    "Bsolution": "",
-    "Uchallenge": "",
-    "Usolution": "",
-    "Conclusion": ""
+    "websiteLink": ""
   },
   {
     "id": 2,
     "heading": "website",
     "miniHeading": "",
     "name": "visily - Saas Web App Tools",
-    "clintName": "",
-    "websiteLink": "",
-    "serviceType": "",
-    "overviewParagraph": "",
-    "researchParagraph": "",
-    "Information Architecture": "",
-    "screenBlueprint": "",
-    "screenBlueprintLink": "",
     "images": [
-      "project2.jpg",
-      "project2.jpg",
       "project2.jpg"
     ],
     "linkToZoom": "project2.jpg",
-    "Rchallenge": "",
-    "Rsolution": "",
-    "Bchallenge": "",
-    "Bsolution": "",
-    "Uchallenge": "",
-    "Usolution": "",
-    "Conclusion": ""
+    "websiteLink": "https://hiifolio-pxxlcom.vercel.app/"
   }
 ]

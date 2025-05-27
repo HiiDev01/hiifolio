@@ -114,7 +114,7 @@ const Contact = () => {
           </form>
         </div>
 
-        <div className="mapCon">
+        {/*<div className="mapCon">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253682.63648020243!2d3.1191438072276583!3d6.548028243711569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b2ae68280c1%3A0xdc9e87a367c3d9cb!2sLagos%2C%20Nigeria!5e0!3m2!1sen!2sus!4v1734540512414!5m2!1sen!2sus" 
             width="100%" 
             height="100%" 
@@ -123,7 +123,7 @@ const Contact = () => {
             loading="lazy" 
             referrerPolicy="no-referrer-when-downgrade">
           </iframe>
-        </div>
+        </div>*/}
 
         <Faq/>
         <Scrolling/>

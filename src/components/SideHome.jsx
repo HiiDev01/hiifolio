@@ -11,9 +11,11 @@ import { Link } from 'react-router-dom';
 const SideHome = () => {
   return (
     <div className='sidehome'>
-      <div className="sideImageContainer"></div>
+      <div className="sideImageContainer">
+        <img src="/myport.png" alt="Image" />
+      </div>
       <div className="sideHomeTextContainer">
-        <h1 className='name'>Olatimeleyin Isaac <span>👋</span></h1>
+        <h1 className='name'>Olatimehin Isaac <span>👋</span></h1>
         <p className='intro_paragraph'>
           I'm a Passionate <strong> <span className='para_span'>Front End Developer💻 </span></strong>
            Specializing in 

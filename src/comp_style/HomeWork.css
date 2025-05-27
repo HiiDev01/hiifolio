@@ -5,7 +5,7 @@
   background-color: var(--white);
 }
 .homework h1{
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   color: var(--deep-black);
   padding: 15px 20px;
   background-color: var(--white);
@@ -15,10 +15,10 @@
 }
 .ExpScrollCon{
   width: 100%;
-  height: auto;
+  height: 100%;
   border-radius: 10px;
   padding: 5px 5px 10px 5px;
-  max-height: 180px;
+  max-height: 220px;
 }
 .ExpScrollWrap{
   display: flex;
