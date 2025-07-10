@@ -64,7 +64,7 @@ const SingleProject = () => {
                   <h2 className='title'>{project.name}</h2>
                   <p className='para'>{project.heading}</p>
                   <div className="linkCon">
-                    <a href={project.link} className='visit-lk'><BiLinkExternal /> visit the website</a>
+                    <a href={project.link} target='_blank' className='visit-lk'><BiLinkExternal /> visit the website</a>
                   </div>
                   <div className="imgCon">
                     <img src={project.images} alt={project.image}/>
