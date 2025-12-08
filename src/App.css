@@ -8,7 +8,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 1% 7% 0% 7%;
+  padding: 1% 5% 0% 5%;
   background-color: var(--background);
   z-index: 1000; /* Ensures the navbar stays on top of other content */
 }

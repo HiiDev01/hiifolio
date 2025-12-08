@@ -40,7 +40,6 @@
   color: var(--primary);
 }
 .navlist_con{
-  flex: 0.8;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -51,7 +50,7 @@
 }
 
 .nav_ul{
-  width: 100%;
+  width: max-content;
   border: none;
 }
 .nav_li{
@@ -117,6 +116,8 @@
   text-decoration: none;
   font-family: var(--font-one);
   font-weight: 500;
+  flex-wrap: nowrap;
+  width: max-content;
   text-transform: capitalize;
   gap: 5px;
   padding: 8px 15px;
