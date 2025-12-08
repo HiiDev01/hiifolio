@@ -39,6 +39,7 @@ const Contact = () => {
         <SideHome/>
       </div>
       <div className="contact_main">
+        <div className='director'><a href="/">home</a> / <p>contact</p></div>
         <div className="contact_heading">
           <h1>Let’s👋 create together🎯</h1>
           <p>Whether you have a project in mind or 

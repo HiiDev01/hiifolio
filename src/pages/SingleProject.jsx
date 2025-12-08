@@ -39,7 +39,7 @@ const SingleProject = () => {
         setFetchError(null)
         setIsLoading(false)
       }
-     }, 1000)
+     }, 0)
     }
 
     fetchSingle()
@@ -61,6 +61,7 @@ const SingleProject = () => {
           ):(
               project && (
                 <div key={project.id}>
+                          <div className='director'><a href="/">project</a> / <p>{project.name}</p></div>
                   <h2 className='title'>{project.name}</h2>
                   <p className='para'>{project.heading}</p>
                   <div className="linkCon">

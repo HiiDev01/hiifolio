@@ -34,6 +34,7 @@ const ServicePage = () => {
         <SideHome/>
       </div>
       <div className="servicepageWrapCon">
+        <div className='director'><a href="/">home</a> / <p>service</p></div>
         <div className="ServicepageHeadCon">
           <div className="ServicePageHeadTextCon">
             <h1>Services I <span>Offered</span></h1>

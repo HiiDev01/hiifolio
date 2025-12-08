@@ -33,7 +33,7 @@ const Project = ({ projects, limit = null, showHeader = true }) => {
         {displayedProjects.map((projectItem) => (
           <div key={projectItem.id} className='projectItemCon'>
             <img 
-              src={projectItem.images[0]} 
+              src={projectItem.images} 
               alt={projectItem.name} 
               className='projectImg' 
             />
@@ -49,7 +49,7 @@ const Project = ({ projects, limit = null, showHeader = true }) => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              {projectItem.heading}
+              {projectItem.name}
             </Link>
           </div>
         ))}

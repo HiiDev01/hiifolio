@@ -148,7 +148,6 @@
 @media screen and (max-width: 1200px ){
   .navbar{
     width: auto;
-    border: 2px solid black;
     border: none;
     padding: 12px 2%;
     display: flex;

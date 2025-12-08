@@ -44,6 +44,7 @@ const SignleBlog = () => {
         </div>
       ): singleBlog ? (
           <div className='wrap'>
+            <div className='director'><a href="/blog">back to blog/</a> <p></p></div>
             <div className='img-wrap'>
               <img src={singleBlog.image} alt={singleBlog.title} />
             </div>

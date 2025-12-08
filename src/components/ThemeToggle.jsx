@@ -16,7 +16,6 @@ const ThemeToggle = ({setHamburgerClick}) => {
     setTheme(newTheme);
     document.body.className = newTheme;
     localStorage.setItem('theme', newTheme);
-    setHamburgerClick(prev => !prev);
   }
   
   return (

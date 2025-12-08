@@ -25,14 +25,6 @@ const Navbar = () => {
   const [hamburgerClick, setHamburgerClick] = useState(false);
   const navRef = useRef();
 
-  useEffect(()=>{
-    if(hamburgerClick){
-      document.body.classList.add('no-scroll');
-    }else{
-      document.body.classList.remove('no-scroll');
-    }
-  }, [hamburgerClick])
-
   const hamburgerToggle = ()=>{
     setHamburgerClick(prev =>!prev);
   }
@@ -45,7 +37,17 @@ const Navbar = () => {
   useEffect(()=>{
     document.addEventListener("mousedown", clickOutsideHamburger)
     return ()=> document.removeEventListener("mousedown", clickOutsideHamburger)
-  },[hamburgerClick])
+  },[hamburgerClick]);
+
+  useEffect(()=>{
+    if(hamburgerClick){
+      document.body.classList.add('no_scrolling');
+    }else{
+      document.body.classList.remove('no_scrolling');
+    }
+  }, [hamburgerClick]);
+
+
   return (
     <div className='navbar' ref={navRef}>
       <div className="logo_con">

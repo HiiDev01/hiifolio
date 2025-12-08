@@ -18,6 +18,7 @@ const Projects = () => {
         const {data, error} = await supabase
         .from('projects')
         .select()
+        .order("name", {ascending: false})
   
         if(error){
           console.log(error)
@@ -47,6 +48,7 @@ const Projects = () => {
       </div>
 
       <div className="projectsMainContainer">
+                <div className='director'><a href="/">home</a> / <p>project</p></div>
         <div className="projectsHeadingCon">
           <h1>My Projects & <span>Case Studies</span></h1>
           <p>

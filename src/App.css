@@ -17,10 +17,29 @@ main{
   width: 100%;
   height: 85vh;
 }
-.no-scroll {
+.no_scrolling {
   overflow: hidden;
 }
+.director{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0px 0px 10px 0px;
+}
+.director p,.director a{
+  font-size: 1rem;
+  color: var(--black);
+  font-family: var(--font-one);
+  text-transform: capitalize;
+}
+.director p{
+  color: var(--primary);
+  cursor: pointer;
+}
 
+.director a:hover{
+  opacity: 0.5;
+}
 
 @media (max-width: 1200px){
   .app{

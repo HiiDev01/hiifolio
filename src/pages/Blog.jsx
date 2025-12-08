@@ -11,6 +11,7 @@ const Blog = () => {
         <SideHome/>
       </div>
       <div className="blogMainCon">
+        <div className='director'><a href="/">home</a> / <p>blog</p></div>
         <div className="blogHeadingCon">
           <h1>Featured Articles and <span>Publications</span></h1>
           <p>

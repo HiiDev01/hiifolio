@@ -14,6 +14,7 @@ const About = () => {
         <SideHome/>
       </div>
       <div className="AboutWrapperCon">
+        <div className='director'><a href="/">home</a> / <p>about</p></div>
         <div className="aboutHeadCon">
           <div className="AboutHeadTextCon">
             <h1>hi, I'm <span>Isaac Olatimeleyin👋</span></h1>
