@@ -164,7 +164,9 @@
     flex-direction: column;
   }
 
-  .projectSideCon,
+  .projectSideCon{
+    display: none;
+  }
   .projectsMainContainer {
     width: 100%;
   }

@@ -40,13 +40,16 @@
   color: var(--primary);
 }
 .navlist_con{
+  flex: 0.8;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 5rem;
 }
 .side_bar_logo{
   display: none;
 }
+
 .nav_ul{
   border: none;
 }
@@ -82,6 +85,7 @@
   transition: color 0.2s ease-in-out;
   color: var(--light-black);
 }
+
 .nav_link.active{
   color: var(--black);
   background-color: var(--dark-theme-white);

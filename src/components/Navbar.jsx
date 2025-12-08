@@ -8,6 +8,7 @@ import { TbPencilHeart } from "react-icons/tb";
 import { TbMessage } from "react-icons/tb";
 import {TbArrowElbowRight } from "react-icons/tb";
 import { TbSmartHome } from "react-icons/tb";
+import { useRef } from 'react';
 import ThemeToggle from './ThemeToggle';
 
 
@@ -21,10 +22,11 @@ const items = [
 ];
 
 const Navbar = () => {
-  const [hamburgerClick, setHamburgerClick] = useState('false');
+  const [hamburgerClick, setHamburgerClick] = useState(false);
+  const navRef = useRef();
 
   useEffect(()=>{
-    if(!hamburgerClick){
+    if(hamburgerClick){
       document.body.classList.add('no-scroll');
     }else{
       document.body.classList.remove('no-scroll');
@@ -32,10 +34,20 @@ const Navbar = () => {
   }, [hamburgerClick])
 
   const hamburgerToggle = ()=>{
-    setHamburgerClick(!hamburgerClick);
+    setHamburgerClick(prev =>!prev);
   }
+
+  const  clickOutsideHamburger = (e) =>{
+    if(hamburgerClick && navRef.current && !navRef.current.contains(e.target)){
+      setHamburgerClick(false)
+    }
+  }
+  useEffect(()=>{
+    document.addEventListener("mousedown", clickOutsideHamburger)
+    return ()=> document.removeEventListener("mousedown", clickOutsideHamburger)
+  },[hamburgerClick])
   return (
-    <div className='navbar'>
+    <div className='navbar' ref={navRef}>
       <div className="logo_con">
         <div className="logo">
           <div className="logo_box"></div>
@@ -46,7 +58,7 @@ const Navbar = () => {
           Hii<span>Folio</span>
         </h1>
       </div>
-      <div className={`navlist_con ${hamburgerClick ? '': 'active'}`}>
+      <div className={`navlist_con ${hamburgerClick ? 'active': ''}`}>
         <div className="logo_con  side_bar_logo">
           <div className="logo">
             <div className="logo_box"></div>
@@ -58,8 +70,7 @@ const Navbar = () => {
           </h1>
         </div>
 
-
-        <ul className='nav_ul'>
+        <ul className='nav_ul' >
           {items.map((list, index) => (
             <li key={index} className='nav_li'>
               <NavLink 
@@ -67,7 +78,7 @@ const Navbar = () => {
                 className={({isActive})=>
                 isActive ? 'nav_link active' : 'nav_link'
                 }
-               onClick={()=> setHamburgerClick(true)}
+               onClick={()=> setHamburgerClick(false)}
               >
                 <span className='nav_icon'>{list.icon}</span>
                 {list.text}
@@ -77,12 +88,12 @@ const Navbar = () => {
         </ul>
         <div className="navlist_btnCon">
           <div className="toggle_component">
-            <ThemeToggle/>
+            <ThemeToggle setHamburgerClick={setHamburgerClick}/>
           </div>
           <Link 
              to="/CONTACT" 
              className='nav_contact_link'
-             onClick={()=> setHamburgerClick(true)}
+             onClick={()=> setHamburgerClick(prev => !prev)}
           >
             let's talk 
             <span>
@@ -92,7 +103,7 @@ const Navbar = () => {
         </div>
       </div>
       <div 
-        className={`hamburger ${hamburgerClick ? '' : 'active'}`} 
+        className={`hamburger ${hamburgerClick ? 'active' : ''}`} 
         onClick={hamburgerToggle}>
         <div className="bars"></div>
         <div className="bars"></div>

@@ -3,6 +3,7 @@ import ProjectProps from './ProjectProps';
 
 const Home = () => {
   const [projects, setProjects] = useState([]);
+  
   useEffect(() => {
     fetch("/data/projects.json")
       .then((res) => res.json())

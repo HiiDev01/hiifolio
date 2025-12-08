@@ -132,6 +132,9 @@
     flex-direction: column;
     gap: 20px;
   }
+  .servicepageSideCompoCon{
+    display: none;
+  }
   .servicepageSideCompoCon,
   .servicepageWrapCon {
     width: 100%;

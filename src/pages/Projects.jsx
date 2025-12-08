@@ -32,7 +32,7 @@ const Projects = () => {
           setAllProjects(data)
           setIsLoading(false)
         }
-      }, 1000)
+      }, 0)
     }
 
     fetchData()

@@ -32,7 +32,7 @@ const StartUpProject = () => {
           setIsLoading(false)
         }
   
-      }, 500)  
+      }, 0)  
     }
     fetchData()
 

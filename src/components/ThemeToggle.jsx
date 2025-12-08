@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { IoSunny,IoMoon  } from "react-icons/io5";
 import "../comp_style/ThemeToggle.css"
 
-const ThemeToggle = () => {
+const ThemeToggle = ({setHamburgerClick}) => {
   const [theme, setTheme]= useState('light');
 
   useEffect(()=>{
@@ -16,6 +16,7 @@ const ThemeToggle = () => {
     setTheme(newTheme);
     document.body.className = newTheme;
     localStorage.setItem('theme', newTheme);
+    setHamburgerClick(prev => !prev);
   }
   
   return (

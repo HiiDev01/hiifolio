@@ -149,6 +149,7 @@
     background-color: var(--white);
     padding: 20px;
     border-radius: 12px;
+    display: none;
   }
   .contact_main{
     width: 100%;

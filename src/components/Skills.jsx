@@ -4,8 +4,8 @@ import t1 from '../assets/images/t1.png'
 import t2 from '../assets/images/t2.png'
 import t3 from '../assets/images/t3.png'
 import t4 from '../assets/images/t4.png'
-import t5 from '../assets/images/t5.png'
-import t6 from '../assets/images/t6.png'
+import t5 from '../assets/images/t7.png'
+import t6 from '../assets/images/t12.png'
 import { FaArrowRight} from "react-icons/fa";
 import { Link } from 'react-router-dom';
 
@@ -13,12 +13,12 @@ import { Link } from 'react-router-dom';
 const Skills = () => {
 
   const techSkills =[
-    {id: 1,stack: 'html',imgUrl: t1},
+    {id: 1,stack: 'html5',imgUrl: t1},
     {id: 2,stack: 'CSS',imgUrl: t2},
     {id: 3,stack: 'JavaScript',imgUrl: t3},
     {id: 4,stack: 'React',imgUrl: t4},
-    {id: 5,stack: 'Php',imgUrl: t5 },
-    {id: 6,stack: 'Firebase',imgUrl: t6}
+    {id: 5,stack: 'Tailwind CSS',imgUrl: t5 },
+    {id: 6,stack: 'Node Js',imgUrl: t6}
   ]
 
   return (

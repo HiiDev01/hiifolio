@@ -17,7 +17,7 @@ const SideHome = () => {
       <div className="sideHomeTextContainer">
         <h1 className='name'>Olatimehin Isaac <span>👋</span></h1>
         <p className='intro_paragraph'>
-          I'm a Passionate <strong> <span className='para_span'>Front End Developer💻 </span></strong>
+          I'm a Passionate <strong> <span className='para_span'>Fullstack Developer💻 </span></strong>
            Specializing in 
           <strong> JavaScript </strong>
            and 
@@ -34,7 +34,7 @@ const SideHome = () => {
           <span><GoMail className='sideHomeLinkIcon'/></span>
            Email Me
         </Link>
-        <a href="#" className='sideHomeLinks'>
+        <a href="/myresume.pdf" download className='sideHomeLinks'>
           <span><RiDownload2Fill className='sideHomeLinkIcon'/></span>
           my Resume
         </a>
