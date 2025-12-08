@@ -61,7 +61,7 @@ const SingleProject = () => {
           ):(
               project && (
                 <div key={project.id}>
-                          <div className='director'><a href="/">project</a> / <p>{project.name}</p></div>
+                          <div className='director'><a href="/Portfolio">project</a> / <p>{project.name}</p></div>
                   <h2 className='title'>{project.name}</h2>
                   <p className='para'>{project.heading}</p>
                   <div className="linkCon">
