@@ -44,7 +44,7 @@ const Project = ({ projects, limit = null, showHeader = true }) => {
               <FiPlus className='zoomicon' />
             </button>
             <Link 
-              to={projectItem.websiteLink} 
+              to={projectItem.link} 
               className='projectHeadingType'
               target="_blank"
               rel="noopener noreferrer"
